@@ -3,10 +3,10 @@ const tipPer = document.querySelector("#tipPer");
 const result = document.querySelector("#result");
 const calculate = document.querySelector("#calculate");
 
-let sonuc = Number(billAmount)+(Number(billAmount)*Number(tipPer)/100)
+calculate.onclick = function () {
+  const tipValue = parseFloat(tipPer.value);
+  const billValue = parseFloat(billAmount.value);
 
-
-
-
-
-sonuc.textContent("#result")
+  const sonuc = billValue + billValue * (tipValue / 100);
+  result.innerHTML = sonuc +"$";
+};
