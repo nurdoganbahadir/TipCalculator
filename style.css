@@ -10,22 +10,51 @@ body {
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
-  background-color: black;
+  background-color: rgb(107, 103, 103);
   color: wheat;
 }
-.container{
-    width: 65%;
-    border: 1px solid rgb(212, 216, 218);
-    border-radius: 1rem;
-    margin: auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+.container {
+  width: 65%;
+  border: 1px solid rgb(212, 216, 218);
+  background-color: black;
+  border-radius: 1rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.container div{
-    display: flex;
-    flex-direction: column;
+.container div {
+  display: flex;
+  flex-direction: column;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+}
+.form-container {
+  background-color: rgb(151, 151, 151);
+  border-radius: 1rem;
+  color: black;
+  padding: 1rem;
+}
+input {
+  height: 30px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  border: none;
+}
+button {
+  background-color: green;
+  transition: all 1s;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(105%);
+  background-color: darkred;
 }
